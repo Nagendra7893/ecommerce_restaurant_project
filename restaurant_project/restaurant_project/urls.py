@@ -25,7 +25,7 @@ urlpatterns = [
     path('',HomeView),
     path('/book_table',BookTableViews),
     path('/menu',MenuViews),
-    path('about',AboutViews),
+    path('/about',AboutViews),
 ] 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
